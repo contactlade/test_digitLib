@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <color name="action_background">#30D5C8</color>
+    <color name="actionbar_text">#FFFFFF</color>
+    <color name="drop_text">#FFFFFF</color>
+    <color name="drop_selector">#30D5C8</color>
+    <color name="popup">#3C1414</color>
+    
+</resources>

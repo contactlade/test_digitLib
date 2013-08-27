@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    
+    
+ 
+
+    
+    
+    
+    <item
+        android:id="@+id/searchme"
+        android:icon="@drawable/search"
+        android:title="@string/searchme"
+        android:orderInCategory="1"
+        yourapp:showAsAction="always"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView"
+        />
+    <item 
+        android:id="@+id/helpme"
+        android:icon="@drawable/help"
+        android:title="@string/helpme"
+        android:orderInCategory="2"
+        yourapp:showAsAction="always"
+        
+        />
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="3"
+        
+        android:title="@string/action_settings"
+        yourapp:showAsAction="collapseActionView" />
+
+</menu>
