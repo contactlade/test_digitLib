@@ -24,7 +24,7 @@
     
         <!-- the theme applied to the application or activity -->
     <style name="CustomActionBarTheme"
-           parent="@style/Theme.AppCompat">
+           parent="@style/Theme.AppCompat.Light">
         <item name="android:actionBarStyle" tools:targetApi="11">@style/MyActionBar</item>
         <item name="android:actionBarTabTextStyle" tools:targetApi="11">@style/MyActionBarTabText</item>
          <item name="android:actionMenuTextColor" tools:targetApi="11">@color/actionbar_text</item>

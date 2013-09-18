@@ -1,3 +1,9 @@
+/* This is d main Activity of the App, 
+ * This is where all the fragments are initialised and loaded. 
+ * also the action bar is initialised here */
+
+
+
 package work.example.test_digitlib;
 
 
@@ -29,6 +35,7 @@ public  class MainActivity extends ActionBarActivity implements ActionBar.OnNavi
 		
 		
 		// this code is used to create the Home Fragments
+		// which happens to be d first fragments u see on the screen
 		FragmentManager ftms = getSupportFragmentManager();
 		FragmentTransaction ft = ftms.beginTransaction();		
 		Home_Fragment main_frag = new Home_Fragment();
@@ -37,7 +44,8 @@ public  class MainActivity extends ActionBarActivity implements ActionBar.OnNavi
 		
 		
 		
-		// this code is used to set up d actionbar with menus and also d dropdown navigation
+		// this code is used to set up d actionbar with menus and 
+		//also to populate d dropdown navigation using arrayadapter
 		actionBar1 = getSupportActionBar();
 		actionBar1.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);		
 		 spin1 = ArrayAdapter.createFromResource(this,R.array.spin_aray,
@@ -60,6 +68,8 @@ public  class MainActivity extends ActionBarActivity implements ActionBar.OnNavi
 	// mOnNavigationListener = new OnNavigationListener(){
 		
 	
+		// this is click method of the drop down navigation
+		// which loads the diff fragment has U click them
 		
 		@Override
 		public boolean onNavigationItemSelected(int position, long itemId){
@@ -97,6 +107,7 @@ public  class MainActivity extends ActionBarActivity implements ActionBar.OnNavi
 				
 			}
 			
+			//replacing d previous fragments here
 			FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 			transaction.replace(R.id.main_frag, newFragment);
 			transaction.addToBackStack(null);
@@ -113,7 +124,7 @@ public  class MainActivity extends ActionBarActivity implements ActionBar.OnNavi
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		// Inflate the menu; this adds items to the action bar 
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
